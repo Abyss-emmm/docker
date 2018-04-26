@@ -1,0 +1,9 @@
+version: '2'
+services:
+ ubuntu-i386:
+   image: pwn/ubuntu-i386:16.04
+   build: .
+   volumes:
+    - ./code:/root/code
+   tty: true
+   privileged: true
